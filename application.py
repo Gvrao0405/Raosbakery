@@ -110,6 +110,9 @@ def logout():
     # Redirect user to login form
     return redirect("/")
 
+@app.route("/maintenance")
+def maintenance():
+  return  render_template("maintenance.html")
 
 @app.route("/register", methods=["GET", "POST"])
 def register():
